@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Project II</title>
+</head>
+<body class="bg-black">
+    <nav class="navbar">
+        <a class="home_btn" href="http://127.0.0.1:5500/Project_Basics/index.html"> Home </a>
+    </nav>
+
+    <main>
+
+        <h1 style="padding: 20px;">BMI Calculator</h1>
+
+        <form>
+        <div>
+            <label for="hgt_fld">Height  :  </label> 
+            <input type="text" id="hgt_fld"  placeholder="Enter Height in CM"> 
+        </div>
+        <br>
+        <div>
+            <label for="hgt_fld">Weight  :  </label> 
+            <input type="text" id="wgt_fld"  placeholder="Enter Weight in KG"> 
+        </div>
+        <br>
+        <button class="calc_btn"> Calculate </button>
+    </form>
+</main>
+
+
+<div style="padding: 20px;" id="result"></div>
+<div style="font-weight: 200; font-size: 15px;" id="summary"></div>
+
+    <br><br><br> 
+    <div>
+        <h3 style="padding: 10px;"> BMI Weight Guide : </h3>
+        <h5> Under Weight = Less than 18.6 </h5>
+        <h5> Normal Range = 18.6 and 24.9 </h5>
+        <h5> Over Weight = Greater than 24.9 </h5>
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

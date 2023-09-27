@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Project IV</title>
+</head>
+<body class="bg-black">
+    <nav class="navbar">
+        <a class="home_btn" href="http://127.0.0.1:5500/Project_Basics/index.html"> Home </a>
+    </nav>
+
+    <main style="display: flex; flex-flow: column wrap; align-items: center;">
+
+        <h1 class="centerFlex"> Number Guessing Game</h1>
+    <div>
+        <p> Try and guess a random number between 1 and 100.</p>
+        <p>You have 10 attempts to get the right number.</p>
+        <br>
+        <h1> Guess a Number </h1>
+            <br>
+                <form  class="centerFlex flexCol">    
+                    <input type="text" placeholder="Enter your guessed number here" class="nb-fld" id="input_nb" autocomplete="off">
+                    <br>
+                    <button class="btn" id="sbm_btn"> Check your guess</button>
+                </form>
+            <!-- <div id="result"> 
+                demo
+            </div> -->
+        </div>
+    <br>
+    <div class="result_area">
+        <div class="centerFlex flexRow"> 
+            <h5>Previous Gusses : </h5>&nbsp<span id="prev-gs"></span>
+        </div>
+        <div class="centerFlex flexRow"> 
+            <h5>Guesses Remaining : </h5>&nbsp<span id="counter">10</span>
+        </div>    
+        <div class="centerFlex flexRow"> 
+            <span style="font-weight: 400;" id="hiOrlow"></span>
+        </div>    
+    </div>
+        
+    </main>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
